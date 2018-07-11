@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/trolley/trolley",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+         "iconPath":"imgs/home.png",
+         "selectedIconPath":"imgs/home-sel.png",
+         "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "imgs/order.png",
+        "selectedIconPath": "imgs/order-sel.png"
+      },
+      {
+        "pagePath":"pages/trolley/trolley",
+        "iconPath": "imgs/trolley.png",
+        "selectedIconPath": "imgs/trolley-sel.png",
+        "text":"购车"
+      },
+      {
+        "pagePath":"pages/user/user",
+        "iconPath": "imgs/user.png",
+        "selectedIconPath": "imgs/user-sel.png",
+        "text":"个人中心"
+      }
+    ]
+  }
+}
