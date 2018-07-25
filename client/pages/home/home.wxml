@@ -13,8 +13,32 @@
 
  <view class='list-title'>
  <image src='/imgs/line-black.png' class='list-black-line-img'></image>
- <text class='list-title-text'>春季推荐</text>
+ <text class='list-title-text'>夏季推荐</text>
  <image src='/imgs/line-black.png' class='list-black-line-img'></image>
+ </view>
+
+ <view class='product-row' wx:for="{{productList}}" wx:key='id'wx:if="{{index%2===1}}">
+ <navigator class='product-card'wx:for="{{[productList[index],productList[index+1]]}}"  wx:key="id" wx:for-index='pindex' wx:for-item='pitem'>
+ <image src='{{pitem.image}}' class='product-img'mode="widthFix"></image>
+ <view class='product-name'>{{pitem.name}}</view>
+
+ <view class='price-contain'>
+ <view class='product-price-unit'>¥</view>
+ <view class='product-price'>240</view>
+ <view class='product-add-toshop'>+</view>
+ </view>
+ </navigator>
+
+ <!-- <view class='product-card' wx:else>
+ <image src='{{productList[index].image}}' class='product-img' mode='widthFix'></image>
+ <view class='product-name'>{{productList[index].name}}</view>
+
+ <view class='price-contain'>
+ <view class='product-price-unit'>¥</view>
+ <view class='product-price'>240</view>
+ <view class='product-add-toshop'>+</view>
+ </view>
+ </view> -->
 
  </view>
 
