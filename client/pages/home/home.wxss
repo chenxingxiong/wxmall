@@ -1,1 +1,52 @@
 /* pages/home/home.wxss */
+.hot-card{
+  position: relative;
+  margin: 32rpx;
+  height: 326rpx;
+  background: #ffffff;
+  border-radius: 15rpx;
+  box-shadow: 0rpx 2rpx 13rpx 5rpx #ececee
+}
+.hot-card-name{
+  position: absolute;
+  align-items: center;
+  display: flex;
+  left: 44rpx;
+  top: 41rpx;
+  width: 300rpx
+}
+
+.name-left-line{
+  height: 39rpx;
+  width: 24rpx;
+}
+.hot-name-text{
+  margin: 0 20rpx;
+  font-size: 28rpx;
+  color: #34373d
+}
+.hot-discount-img{
+  position: absolute;
+  width: 259rpx;
+  height: 188rpx;
+  left: 42rpx;
+  bottom: 0
+}
+.hot-img{
+  position: absolute;
+  top: 53rpx;
+  right: 47rpx;
+  width: 241rpx;
+  height: 241rpx
+}
+
+.list-title{
+  margin: 90rpx 0 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-black-line-img{
+  width: 21rpx;
+  height: 34rpx;
+}

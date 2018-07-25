@@ -1,2 +1,21 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+ <image src='/imgs/bg.png' class='bg'></image>
+
+ <view class='hot-card'>
+ <view class='hot-card-name'>
+ <image src='/imgs/line-red.png' class='name-left-line'/> 
+ <text class='hot-name-text'>商品</text>
+ <image src='/imgs/line-red.png'class='name-left-line'></image>
+ </view>
+ <image src='/imgs/discount.png' class='hot-discount-img'></image>
+ <image class='hot-img' src='{{productList[0].image}}' ></image>
+ </view>
+
+ <view class='list-title'>
+ <image src='/imgs/line-black.png' class='list-black-line-img'></image>
+ <text class='list-title-text'>春季推荐</text>
+ <image src='/imgs/line-black.png' class='list-black-line-img'></image>
+
+ </view>
+
+
