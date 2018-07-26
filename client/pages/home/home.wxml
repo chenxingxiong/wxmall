@@ -24,7 +24,7 @@
 
  <view class='price-contain'>
  <view class='product-price-unit'>¥</view>
- <view class='product-price'>240</view>
+ <view class='product-price'>{{pitem.price}}</view>
  <view class='product-add-toshop'>+</view>
  </view>
  </navigator>

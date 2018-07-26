@@ -46,6 +46,9 @@
   align-items: center;
   justify-content: center;
 }
+.list-title-text{
+  margin: 0 15rpx
+}
 .list-black-line-img{
   width: 21rpx;
   height: 34rpx;
