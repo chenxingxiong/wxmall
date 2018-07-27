@@ -1,5 +1,6 @@
 // pages/home/home.js
 const qcloud=require('../../vendor/wafer2-client-sdk/index.js')
+const config=require('../../config.js')
 Page({
 
   /**
@@ -14,19 +15,29 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getProductList();
+  },
+
+  getProductList(){
+    wx.showLoading({
+      title: '正在加载中...',
+    })
     qcloud.request({
-      url: 'https://xek6j1n7.qcloud.la/weapp/product',
-      success:reslut=>{
+      url: config.service.productListUrl,
+      success: reslut => {
         console.log(reslut)
         this.setData({
-         productList:reslut.data.data
-       })
+          productList: reslut.data.data
+        })
+        wx.hideLoading()
       },
-      fail:()=>{
-
+      fail: () => {
+        wx.hideLoading()
+        wx.showToast({
+          title: '不好意思,我挂了...',
+        })
       }
     })
-  
   },
 
   /**

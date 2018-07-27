@@ -3,6 +3,7 @@ module.exports={
   // 获取商品列表
   list:async ctx =>{
     ctx.state.data = await DB.query("SELECT * FROM product;")
+   
   },
 
   detail: async ctx => {
