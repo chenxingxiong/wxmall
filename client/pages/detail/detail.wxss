@@ -1,0 +1,26 @@
+/* pages/detail/detail.wxss */
+.detail-header{
+  color: #ffffff;
+  border-radius: 15rpx;
+  margin-bottom: 15rpx;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  
+}
+
+.head-img{
+ display: block;
+ width: 370rpx;
+ height: 370rpx;
+
+}
+
+.product-name{
+ color: #8B8B8B;
+ font-size: 38rpx;
+ line-height: 53rpx;
+  
+}
+
+.product-source{
+
+}

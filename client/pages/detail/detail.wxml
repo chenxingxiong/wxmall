@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail-header'>
+<image src='{{product.image}}' class='head-img'></image>
+<view class='product-name'>商品</view> 
+<view class='product-source'>{{product.source}}</view>
+
+
+</view>
